@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+    background-color:#FFAEBD ;
+    padding: 2vw;
+}
+
+header li{
+    list-style: none;
+}
