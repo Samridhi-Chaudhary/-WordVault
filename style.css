@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+#title{
+  flex:1;
+}
 
 header{
     background-color:#FFAEBD ;
@@ -12,4 +21,8 @@ header{
 
 header li{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
+
+
