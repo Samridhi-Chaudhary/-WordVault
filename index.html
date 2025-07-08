@@ -29,12 +29,18 @@
         </nav>
     </header>
     <section>
-        <div id="dictonary container">
+        <div id="dictionary-container">
+            <h1>WordVault</h1>
             <label for="searchWord">Enter the word you want to search :</label>
             <input type="text" name="searchWord" id="searchWord">
-            <!-- <label for="meaning">Meaning:</label> -->
-            <span id="meaning"></span>
-            <button onclick="searchMeaning()">Search</button>
+            <p>Meaning: </p>
+            <span id="meaning" class="output-box"></span>
+            <p>Example: </p>
+            <span id="example" class="output-box"></span>
+            <div id="button-wrapper">
+
+                <button id="search-Btn" onclick="searchMeaning()">Search</button>
+            </div>
         </div>
     </section>
     <script src="script.js" ></script>

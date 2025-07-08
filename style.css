@@ -8,15 +8,19 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4vw;
 } 
 
 #title{
-  flex:1;
+  font-size: 2vw;
+  font-style: oblique;
+  text-shadow: 7px 7px 8px white;
 }
 
 header{
     background-color:#FFAEBD ;
-    padding: 2vw;
+    padding: 1vw;
+    box-sizing: border-box;
 }
 
 header li{
@@ -25,4 +29,90 @@ header li{
     flex-direction: column;
 }
 
+body{
+  background-color: #FFE0E6;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+#dictionary-container{
+  background-color: #FFAEBD;
+  padding: 2vw;
+  border-radius: 2vw;
+  width: 50%;
+  text-align: left;
+  align-items: left;
+  margin: 2% 25% 10% 25%;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#dictionary-container h1{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2vw;
+  text-decoration:wavy;
+  text-shadow: 7px 7px 8px white;
+}
+
+#dictionary-container label,
+#dictionary-container input,
+#dictionary-container p,
+#dictionary-container span{
+  text-align: left;
+  width:100%;
+  padding:1vw;
+  /* font-weight: bold; */
+}
+
+#dictionary-container label,
+#dictionary-container p{
+  font-weight: bold;
+}
+#searchWord {
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+#search-Btn {
+  padding: 0.5em 1.2em;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: white;
+  color: #FF5072;
+  cursor: pointer;
+  transition: background 0.2s ;
+  margin-top: 1.5em;
+}
+
+#search-Btn:hover {
+  background-color:#FF5072;
+  color: white;
+
+}
+
+.output-box {
+  background-color: white;
+  min-height: 3em; /* fixed space even when empty */
+  width: 100%;
+  border-radius: 0.4em;
+  padding: 0.6em;
+  box-sizing: border-box;
+  color:black;
+  font-size: 1em;
+
+}
