@@ -32,7 +32,7 @@
         <div id="dictionary-container">
             <h1>WordVault</h1>
             <label for="searchWord">Enter the word you want to search :</label>
-            <input type="text" name="searchWord" id="searchWord">
+            <input type="text" name="searchWord" id="searchWord" onkeydown="if (event.key === 'Enter') searchMeaning();">
             <p>Meaning: </p>
             <span id="meaning" class="output-box"></span>
             <p>Example: </p>

@@ -65,19 +65,10 @@ async function searchMeaning() {
         alert(`Error: ${error.message}`);
 
     }
-
-    // fetch(url)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         const meaning = data[0].meanings[0].definitions[0].definition;
-    //         // console.log(mean);
-    //                     const example=data[0].meanings[0].definitions[0].example;
-    //         // console.log(example ||"No example available.");
-    //         document.getElementById("meaning").innerHTML=`${meaning}`;
-    //         document.getElementById("example").innerHTML=`${example || "No example available"}  `;
-
-    //     })
-    //     .catch(error => {
-    //         console.log(`Error fetching meaning of ${word}`);
-    //     })
 }
+
+// document.getElementById("search-Btn").addEventListener("keydown", function(event) {
+//     if (event.key === "Enter") {
+//         searchMeaning(); 
+//     }
+// });
