@@ -1,10 +1,8 @@
-// require('dotenv').config();
 
 navigator.geolocation.getCurrentPosition(
     (position) => {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
-        // console.log(`Latitude: ${latitude}, Longitude: ${longitude}` );
         getWeather(latitude, longitude);
     }, (error) => {
         console.log("Error getting location", error);
@@ -12,7 +10,6 @@ navigator.geolocation.getCurrentPosition(
 
 function getWeather(latitude, longitude) {
     const apiKey = "f9071d7b47fd8c35db7b6e98bd2e07be";
-    // const apiKey = process.env.apiKey;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
     fetch(url)
@@ -55,8 +52,7 @@ async function searchMeaning() {
 
         const definition= data[0].meanings[0].definitions[0].definition;
         const example=data[0].meanings[0].definitions[0].example;
-        // console.log(definition);
-        // console.log(example);
+
         document.getElementById("meaning").textContent= definition;
         document.getElementById("example").textContent= example||"No Example available";
     }
@@ -67,8 +63,4 @@ async function searchMeaning() {
     }
 }
 
-// document.getElementById("search-Btn").addEventListener("keydown", function(event) {
-//     if (event.key === "Enter") {
-//         searchMeaning(); 
-//     }
-// });
+
