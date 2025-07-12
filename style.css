@@ -4,39 +4,39 @@
   box-sizing: border-box;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4vw;
-} 
+}
 
-#title{
+#title {
   font-size: 2vw;
   font-style: oblique;
   text-shadow: 7px 7px 8px white;
 }
 
-header{
-    background-color:#FFAEBD ;
-    padding: 1vw;
-    box-sizing: border-box;
+header {
+  background-color: #FFAEBD;
+  padding: 1vw;
+  box-sizing: border-box;
 }
 
-header li{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+header li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
-body{
+body {
   background-color: #FFE0E6;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-#dictionary-container{
+#dictionary-container {
   background-color: #FFAEBD;
   padding: 2vw;
   border-radius: 2vw;
@@ -51,28 +51,29 @@ body{
 
 }
 
-#dictionary-container h1{
+#dictionary-container h1 {
   text-align: center;
   font-weight: bolder;
   font-size: 2vw;
-  text-decoration:wavy;
+  text-decoration: wavy;
   text-shadow: 7px 7px 8px white;
 }
 
 #dictionary-container label,
 #dictionary-container input,
 #dictionary-container p,
-#dictionary-container span{
+#dictionary-container span {
   text-align: left;
-  width:100%;
-  padding:1vw;
+  width: 100%;
+  padding: 1vw;
   /* font-weight: bold; */
 }
 
 #dictionary-container label,
-#dictionary-container p{
+#dictionary-container p {
   font-weight: bold;
 }
+
 #searchWord {
   padding: 0.5em;
   font-size: 1em;
@@ -82,7 +83,7 @@ body{
   box-sizing: border-box;
 }
 
-#button-wrapper{
+#button-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -95,24 +96,72 @@ body{
   background-color: white;
   color: #FF5072;
   cursor: pointer;
-  transition: background 0.2s ;
+  transition: background 0.2s;
   margin-top: 1.5em;
 }
 
 #search-Btn:hover {
-  background-color:#FF5072;
+  background-color: #FF5072;
   color: white;
 
 }
 
 .output-box {
   background-color: white;
-  min-height: 3em; /* fixed space even when empty */
+  min-height: 3em;
+  /* fixed space even when empty */
   width: 100%;
   border-radius: 0.4em;
   padding: 0.6em;
   box-sizing: border-box;
-  color:black;
+  color: black;
   font-size: 1em;
+}
+
+
+@media screen and (width<=900px) {
+
+  #title {
+    font-size: 5vw;
+  }
+
+  nav {
+    height: 13vw;
+  }
+
+  #dictionary-container h1 {
+    font-size: 6vw;
+    text-decoration: wavy;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+  }
+
+  #dictionary-container {
+    width: 90%;
+    margin: 10% 1% 2% 4%;
+    font-size: 4vw;
+  }
+
+  .output-box {
+    font-size: 1em;
+  }
+  #leftNav{
+    font-size: 12px;
+  }
+
+  #dictionary-container label,
+#dictionary-container input,
+#dictionary-container p,
+#dictionary-container span {
+  width: 100%;
+  padding: 4vw;
+}
+
+header {
+  padding: 4vw;
+}
+
+
+
 
 }
