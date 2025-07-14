@@ -33,7 +33,6 @@ body {
   background-color: #FFE0E6;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
 }
 
 #dictionary-container {
@@ -43,7 +42,7 @@ body {
   width: 50%;
   text-align: left;
   align-items: left;
-  margin: 2% 25% 10% 25%;
+  margin: 2% 25% 0% 25%;
   font-size: 1vw;
   display: flex;
   flex-direction: column;
