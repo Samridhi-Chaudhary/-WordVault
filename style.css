@@ -118,7 +118,7 @@ body {
 }
 
 
-@media screen and (width<=900px) {
+@media screen and (width<=850px) {
 
   #title {
     font-size: 5vw;
